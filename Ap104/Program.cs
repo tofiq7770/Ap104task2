@@ -8,7 +8,6 @@ namespace Ap104
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
             // Add services to the container.
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
@@ -19,7 +18,6 @@ namespace Ap104
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IRepository, Repository>();
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,14 +26,9 @@ namespace Ap104
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }
