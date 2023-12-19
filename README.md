@@ -32,7 +32,7 @@ Provide a brief introduction to your project. Explain its purpose, features, and
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/tofiq7770/Ap104.git
+   git clone https://github.com/tofiq7770/Ap104task2.git
    
 API Endpoints
 Categories
